@@ -33,8 +33,13 @@ packages:
   - git: https://github.com/dbt-labs/dbt-labs-experimental-features
     subdirectory: insert_by_timeperiod
     revision: XXXX #optional but highly recommended. Provide a full git sha hash, e.g. 7180db61d26836b931aa6ef8ad9d70e7fb3a69fa. If not provided, uses the current HEAD.
-
 ```
+
+### Supported Versions: 
+
+As of 29/05/2024 - only tested on Azure Synapse.
+
+Dbt versions tested: 1.4, 1.7
 
 ## Usage:
 
