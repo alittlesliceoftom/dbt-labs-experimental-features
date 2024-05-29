@@ -107,7 +107,7 @@ Backfill of date ranges can be done via CLI arguments. This is an advanced featu
 
 Example command that would backfill `base_ibp_model` + it's immediate downstream dependencies for given date range (right date excluded.)
 
-`dbt run -s base_ibp_model+1 --vars "{start_date: '2023-09-08', stop_date: '2023-09-10', backfill: true}" --full-refresh`
+`dbt run -s base_ibp_model+ --vars "{start_date: '2023-09-08', stop_date: '2023-09-10', backfill: true}" --full-refresh`
 
 The `--full-refresh` is overrided by backfilll parameter for IBTP models, but applies for incremental models. This lets you run dependent models together.
 
